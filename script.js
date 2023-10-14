@@ -39,25 +39,25 @@ tl.to("#landing3", {
     width: "80%",
 }, "a")
 var t2 = gsap.timeline({
-    scrollTrigger: {
-        trigger: "#frame3",
-        scroller: "#main",
-        // markers: true,
-        start: "top 80%",
-        end: "top 40%",
-        scrub: 3
-    }
-})
-var t3 = gsap.timeline({
-    scrollTrigger: {
-        trigger: ".text1 h1",
-        scroller: "#main",
-        // markers: true,
-        start: "top 70%",
-        end: "top 40%",
-        scrub: 3
-    }
-})
+        scrollTrigger: {
+            trigger: "#frame3",
+            scroller: "#main",
+            // markers: true,
+            start: "top 80%",
+            end: "top 40%",
+            scrub: 3
+        }
+    })
+    // var t3 = gsap.timeline({
+    //     scrollTrigger: {
+    //         trigger: ".text1 h1",
+    //         scroller: "#main",
+    //         markers: true,
+    //         start: "top 80%",
+    //         end: "top 50%",
+    //         scrub: 3
+    //     }
+    // })
 t2.to(".text1 h1", {
     y: -130,
     opacity: 1,
@@ -67,20 +67,20 @@ t2.to(".text2 h1", {
     opacity: 1
 }, "b")
 t2.from(".box", {
-    scale: 0,
-    opacity: 0,
-}, "b")
-t3.to(".text1 h1", {
-    y: 50,
-    opacity: 0,
-}, "b")
-t3.to(".text2 h1", {
-    y: -50,
-    opacity: 0,
-}, "b")
-t3.to(".box", {
-        opacity: 0
+        scale: 0,
+        opacity: 0,
     }, "b")
+    // t3.to(".text1 h1", {
+    //     y: 50,
+    //     opacity: 0,
+    // }, "b")
+    // t3.to(".text2 h1", {
+    //     y: -50,
+    //     opacity: 0,
+    // }, "b")
+    // t3.to(".box", {
+    //         opacity: 0
+    //     }, "b")
     //************************************cursor-pointer-animation************************************
 
 let cursor = document.querySelector("#cursor")
