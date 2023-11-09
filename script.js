@@ -84,7 +84,7 @@ t2.from(".box", {
     //************************************cursor-pointer-animation************************************
 
 let cursor = document.querySelector("#cursor")
-let main = document.querySelector("#main")
+let main = document.querySelector("body")
 main.addEventListener("mousemove", function(dets) {
     cursor.style.left = (dets.x - 13) + "px"
     cursor.style.top = (dets.y - 13) + "px"
