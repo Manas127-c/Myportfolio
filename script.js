@@ -100,6 +100,7 @@ function frame1anime() {
         e.addEventListener("mouseleave", function(dets) {
             gsap.to(e.querySelector("img"), {
                 opacity: 0,
+                scale: 0,
                 ease: Power3,
             })
         })
